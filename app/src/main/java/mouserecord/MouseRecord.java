@@ -81,9 +81,9 @@ public class MouseRecord {
             Thread.sleep(18);
         }
         cli.stop();
+        reader.close();
         System.out.println("\nFile '"+recordFileName+"' was successfully played.");
         System.exit(0);
-        reader.close();
     }
 
 }
